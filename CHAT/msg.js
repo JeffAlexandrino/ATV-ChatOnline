@@ -10,3 +10,16 @@ function adicionaItem(nomeItem, qtdItem) {
 
 }
 
+function formAdiciona(event) {
+  event.preventDefault();
+
+  const campoItem = document.querySelector("#item");
+  adicionaItem(campoItem.value);
+
+  campoItem.value = "";
+}
+
+const formAdd = document.querySelector("#formAdd");
+formAdd.addEventListener("submit", formAdiciona);
+
+
