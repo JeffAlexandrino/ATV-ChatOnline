@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Online</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Atendimento ao Cliente On-line</h1>
+      </div>
+      <div class="chat">
+        <div class="chatBox">
+          <div class="chatAtendente">
+            <h5 class="labelAtendente">Atendente disse:</h5>
+            <p class="Atendente">
+              Obrigado por entrar em contato com nossa equipe logo mais, um
+              atendente irá entrar em contato com você!
+            </p>
+            <h5 class="labelAtendente">Atendente disse:</h5>
+            <p class="Atendente">Olá, como posso te ajudar?</p>
+          </div>
+          <div class="chatCliente">
+            <ul id="lista-de-compras"  style="list-style: none;">
+              <li  style="list-style: none;"></li>
+            </ul>
+          </div>
+        </div>
+
+        <form id="formAdd" action="index.html" method="post" class="mensagem">
+          <input
+            class="input"
+            type="text"
+            id="item"
+            name="fname"
+            placeholder="Digite sua mensagem"
+          />
+          <button class="button">Enviar</button>
+        </form>
+      </div>
+      <footer>
+        <p> Desenvolvido por <a href="https://github.com/JeffAlexandrino" target="_blank">Jefferson Alexandrino</a></p>
+      </footer>
+    </div>
+    <script src="msg.js"></script>
+  </body>
+</html>
